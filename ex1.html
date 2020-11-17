@@ -5,52 +5,58 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            * {
-                box-sizing: border-box;
+            .flex-container {
+                flex-direction: column;
+                display: flex;
+                height: 640px; 
             }
-            html, body {
-                height: 100%;
-                margin: 0;
+            .item {
+                display: flex;
+                height: 60%;
+            }
+            .item1{
+                height: 20%;
+
+            }
+            .item2{
+                width: 20%;
+            }
+            .item3{
+                width: 80%;
+            }
+            .item4{
+                height: 20%;
             }
             header{
-                height: 20%;
                 background-color: blue;
                 text-align: center;
             }
 
             aside {
-                height: 60%;
-                width: 20%;
-                float: left;
                 text-align: center;
                 background-color: orange;
             }
 
             section{
-                height: 60%;
-                float: left;
-                width: 80%;
                 text-align: center;
                 background-color: purple;
             }
             
             footer{
-                height: 20%;
                 background-color: darkgreen;
-                padding: 10px;
                 text-align: center;
-                clear: both;
             }
             
         </style>
     </head>
     <body>
-        <header>Header</header>
-
-        <aside><p>Aside</p></aside>
-
-        <section><p>Section</p></section>
-        
-        <footer><p>Footer</p></footer>
+        <div class="flex-container">
+            <header class="item1">Header</header>
+            <div class="item">
+                <aside class="item2">Aside</aside>
+                <section class="item3">Section</section>
+            </div>
+            <footer class="item4">Footer</footer> 
+        </div>
     </body>
 </html>
