@@ -1,0 +1,62 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.header{
+    height: 20%;
+}
+
+.header-text{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: blue;
+    text-align: center;
+    line-height: 114px;
+}
+
+.main{
+    height: 60%;
+}
+
+.main .content{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.aside{
+    width: 30%;
+    background-color: orange;
+    text-align: center;
+}
+
+
+.section{
+    width: 70%;
+    background-color: purple;
+    text-align: center;
+}
+
+.footer{
+    height: 20%;
+}
+
+.footer-text{
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    line-height: 114px;
+    background-color: darkgreen;
+    margin: auto;
+}

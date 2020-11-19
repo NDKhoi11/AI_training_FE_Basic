@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Ex1</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            .flex-container {
-                flex-direction: column;
-                display: flex;
-                height: 640px; 
-            }
-            .item {
-                display: flex;
-                height: 60%;
-            }
-            .item1{
-                height: 20%;
-
-            }
-            .item2{
-                width: 20%;
-            }
-            .item3{
-                width: 80%;
-            }
-            .item4{
-                height: 20%;
-            }
-            header{
-                background-color: blue;
-                text-align: center;
-            }
-
-            aside {
-                text-align: center;
-                background-color: orange;
-            }
-
-            section{
-                text-align: center;
-                background-color: purple;
-            }
-            
-            footer{
-                background-color: darkgreen;
-                text-align: center;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <div class="flex-container">
-            <header class="item1">Header</header>
-            <div class="item">
-                <aside class="item2">Aside</aside>
-                <section class="item3">Section</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main_ex1.css">
+    <title>Ex1</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header header-top">
+            <div class="container">
+                <div class="header-text">
+                    Header
+                </div>
             </div>
-            <footer class="item4">Footer</footer> 
         </div>
-    </body>
+        <div class="header header-bot">
+            <div class="container">
+                <nav class="nav-text">
+                    Navigator
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="section sectionA">
+                <div class="sectionA-text">
+                    SectionA
+                </div>
+            </div>
+            <div class="section sectionB">
+                <div class="container">
+                    <div class="sectionB-text">
+                        SectionB
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">
+                Footer
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

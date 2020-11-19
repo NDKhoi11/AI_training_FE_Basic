@@ -1,0 +1,87 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.header{
+    height: 30%;
+}
+
+.header .header-top{
+    height: 60%;
+}
+
+.header .header-bot{
+    height: 40%;
+}
+
+.header-text{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 102.59px;
+    background-color: blue;
+}
+
+.nav-text{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    line-height: 63.89px;
+    margin: auto;
+    background-color: orange;
+}
+
+.main{
+    height: 50%;
+}
+
+.section{
+    height: 100%;
+}
+
+.section .sectionA{
+    height: 50%;
+}
+
+.section .sectionB{
+    height: 50%;
+}
+
+.sectionA-text{
+    height: 100%;
+    text-align: center;
+    line-height: 142.5px;
+    background-color: purple;
+}
+
+.sectionB-text{
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    line-height: 142.5px;
+    background-color: yellow;
+    margin: auto;
+}
+
+.footer{
+    height: 20%;
+}
+
+.footer-text{
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    line-height: 114px;
+    background-color: darkgreen;
+    margin: auto;
+}
