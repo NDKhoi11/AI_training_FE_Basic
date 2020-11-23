@@ -4,6 +4,12 @@ html, body{
     margin: 0;
 }
 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container{
     max-width: 1440px;
     width: 100%;
@@ -14,35 +20,30 @@ html, body{
 
 .header{
     height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.header-text{
+.header .header-text{
     height: 100%;
     background-color: blue;
 }
 
 .main{
     height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.main-content{
+.main .section{
+    height: 100%;
     display: flex;  
 }
 
-.aside{
+.main .aside{
     width: 30%;
     background-color: orange;
     text-align: center;
 }
 
 
-.section{
+.main .sectiona{
     width: 70%;
     background-color: purple;
     text-align: center;
@@ -50,12 +51,9 @@ html, body{
 
 .footer{
     height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.footer-text{
+.footer .footer-text{
     height: 100%;
     background-color: darkgreen;
 }

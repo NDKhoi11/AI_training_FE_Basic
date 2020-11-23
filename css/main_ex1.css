@@ -4,6 +4,12 @@ html, body{
     margin: 0;
 }
 
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container{
     max-width: 1440px;
     width: 100%;
@@ -16,28 +22,22 @@ html, body{
     height: 30%;
 }
 
-.header-top{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header .header-top{
     margin: 0;
     height: 60%;
 }
 
-.header-bot{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header .header-bot{
     margin: 0;
     height: 40%;
 }
 
-.header-text{
+.header .header-top-text{
     height: 100%;
     background-color: blue;
 }
 
-.nav-text{
+.header .header-bot-text{
     height: 100%;
     background-color: orange;
 }
@@ -46,36 +46,27 @@ html, body{
     height: 50%;
 }
 
-.sectionA{
+.main .sectionA{
     height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.sectionB{
+.main .sectionB{
     height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.sectionA-text{
+.main .sectionA-text{
     height: 100%;
     width: 100%;
     background-color: purple;
 }
 
-.sectionB-text{
+.main .sectionB-text{
     height: 100%;
     background-color: yellow;
 }
 
 .footer{
     height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-text{
