@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main_ex2.css">
-    <title>Ex2</title>
+    <title>Document</title>
 </head>
 <body>
-    <header class="center header">
-        <div class="container">
-            <div class="center header-text">
-                Header
-            </div>
-        </div>
-    </header>
+    <p id="demo"></p>
+    <script>
+        function function1(a, b) {
+            return a === b ? a*3 : a + b;
+        }
 
-    <main class="center main">
-        <div class="container">
-            <section class="section">
-                <aside class="aside">
-                    Aside
-                </aside>
-                <section class="sectiona">
-                    Section
-                </section>
-            </section>
-        </div>
+        function function2(a) {
+            return a > 19 ? (a - 19)*3 : 19 - a;
+        }
 
-    </main>
+        function function3(a) {
+            let res = [];
+            let sum_a = (a.replace("*","").split("")).reduce(function(acc, val) { return acc + Number(val); }, 0);
+            for (let i = 0; i < 10; i++){
+                if ((sum_a + i) % 3 == 0) {
+                    res.push(a.replace("*",i));
+                }
+            }
+            return res;
+        }
 
-    <footer class="center footer">
-        <div class="container">
-            <div class="center footer-text">
-                Footer
-            </div>
-        </div>
-    </footer>
+        function function4(a) {
+            let temp = function3(a);
+            let res = temp.filter(isEvenNumber);
+
+            function isEvenNumber(val) {
+                return Number(val) % 2 == 0;
+            }
+            return res;
+        }
+
+        console.log(function1(5,5));
+        console.log(function2(15));
+        console.log(function3("1*9"));
+        console.log(function4("1234567890*"));
+    </script>
 </body>
 </html>
